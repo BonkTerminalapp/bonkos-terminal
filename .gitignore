@@ -1,0 +1,54 @@
+# Dependencies
+node_modules
+dist
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# Wallet files (contains private keys)
+wallets/
+
+# Specific wallet/keypair files (exclude these as they contain private keys)
+*.keypair
+boNk*.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+server/public
+vite.config.ts.*
+*.tar.gz
+
+# Temporary files
+tmp/
+temp/
