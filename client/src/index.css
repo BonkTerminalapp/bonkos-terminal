@@ -1,0 +1,430 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Terminal specific colors */
+  --terminal-bg: hsl(300, 23%, 10%);
+  --terminal-fg: hsl(120, 100%, 50%);
+  --terminal-cursor: hsl(120, 100%, 60%);
+  --terminal-selection: hsl(120, 100%, 60%);
+  --terminal-header-bg: hsl(0, 0%, 0%);
+  --terminal-border: hsl(0, 0%, 20%);
+}
+
+.dark {
+  --background: hsl(300, 23%, 10%);
+  --foreground: hsl(120, 100%, 50%);
+  --muted: hsl(300, 15%, 15%);
+  --muted-foreground: hsl(120, 50%, 65%);
+  --popover: hsl(300, 23%, 10%);
+  --popover-foreground: hsl(120, 100%, 50%);
+  --card: hsl(300, 23%, 10%);
+  --card-foreground: hsl(120, 100%, 50%);
+  --border: hsl(300, 15%, 15%);
+  --input: hsl(300, 15%, 15%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(300, 15%, 15%);
+  --secondary-foreground: hsl(120, 100%, 50%);
+  --accent: hsl(300, 15%, 15%);
+  --accent-foreground: hsl(120, 100%, 50%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(300, 15%, 40%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-mono antialiased bg-background text-foreground;
+    background: linear-gradient(135deg, #1a0d1a 0%, #2d1b2d 100%);
+    color: #00ff00;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font size for mobile */
+  }
+  
+  /* Mobile-first approach with larger base font */
+  @media (max-width: 768px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 22px;
+    }
+  }
+
+  #root {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* Terminal specific styles */
+.terminal-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a0d1a 0%, #2d1b2d 100%);
+}
+
+.terminal-header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 16px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  min-height: 44px; /* Touch-friendly height on mobile */
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.control-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.control-btn.close { background: #ff5f56; }
+.control-btn.minimize { background: #ffbd2e; }
+.control-btn.maximize { background: #27ca3f; }
+
+.terminal-title {
+  color: #888;
+  font-size: 12px;
+  font-family: 'Courier New', Monaco, Menlo, monospace;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .terminal-title {
+    font-size: 16px; /* Much larger title on mobile */
+  }
+  
+  .control-btn {
+    width: 18px; /* Even larger controls for touch */
+    height: 18px;
+  }
+  
+  .terminal-header {
+    padding: 8px 12px; /* Reduced padding to save space */
+    min-height: 44px; /* Smaller header for more terminal space */
+  }
+  
+  /* Make terminal text much more readable on mobile */
+  .xterm-screen {
+    font-size: 20px !important;
+    line-height: 1.7 !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Ensure terminal viewport takes full screen on mobile */
+  .xterm-viewport {
+    padding: 5px !important;
+  }
+  
+  /* Better text rendering on mobile */
+  .xterm-rows {
+    font-size: 20px !important;
+    line-height: 1.7 !important;
+  }
+  
+  /* Better cursor visibility on mobile */
+  .xterm-cursor-layer {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-header {
+    padding: 6px 10px; /* Minimal padding to maximize terminal space */
+    min-height: 40px;
+  }
+  
+  .terminal-title {
+    font-size: 14px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .control-btn {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Force much larger terminal text on small screens */
+  .xterm-screen {
+    font-size: 24px !important;
+    line-height: 2.0 !important;
+    font-weight: 600 !important;
+  }
+  
+  .xterm-viewport {
+    padding: 2px !important;
+  }
+  
+  .xterm-rows {
+    padding: 3px !important;
+    font-size: 24px !important;
+    line-height: 2.0 !important;
+  }
+  
+  /* Make sure text is crisp on mobile */
+  .xterm-helper-textarea {
+    font-size: 24px !important;
+  }
+  
+  /* Better cursor on very small screens */
+  .xterm-cursor-layer {
+    font-size: 24px !important;
+  }
+  
+  /* Optimize selection layer for mobile */
+  .xterm-selection {
+    opacity: 0.3;
+  }
+}
+
+.terminal-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Mobile terminal wrapper optimization */
+@media (max-width: 768px) {
+  .terminal-wrapper {
+    padding: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-wrapper {
+    padding: 0px; /* No padding to maximize space */
+  }
+  
+  /* Completely fill mobile screen */
+  .terminal-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  /* Mobile-specific terminal styling */
+  .xterm {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Ensure mobile readability */
+  .xterm-helper-textarea,
+  .xterm-rows,
+  .xterm-screen {
+    font-size: 24px !important;
+    line-height: 2.0 !important;
+    font-weight: 600 !important;
+  }
+}
+
+.boot-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a0d1a;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-out;
+}
+
+.boot-screen.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ascii-art {
+  color: #39ff14;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+  white-space: pre;
+  font-family: 'Courier New', Monaco, Menlo, monospace;
+  animation: glow 2s ease-in-out infinite alternate;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Mobile responsive ASCII art - minimal on tablets */
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 1px;
+    transform: scale(0.08);
+    transform-origin: center;
+    margin-bottom: 0px;
+    max-height: 30px;
+    overflow: hidden;
+  }
+  
+  .boot-screen {
+    padding: 2px;
+    justify-content: center;
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .boot-screen {
+    display: none !important; /* Skip boot screen entirely on mobile */
+  }
+  
+  .ascii-art {
+    display: none !important; /* Hide completely on mobile */
+  }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #39ff14; }
+  to { text-shadow: 0 0 20px #39ff14, 0 0 30px #39ff14; }
+}
+
+.boot-text {
+  color: #00ff00;
+  font-size: 14px;
+  margin: 5px 0;
+  font-family: 'Courier New', Monaco, Menlo, monospace;
+  animation: typewriter 0.5s ease-in-out;
+}
+
+/* Mobile responsive boot text */
+@media (max-width: 768px) {
+  .boot-text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 2px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .boot-text {
+    font-size: 18px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 1px 0;
+  }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.loading-dots::after {
+  content: '';
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+
+.terminal-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-family: 'Courier New', Monaco, Menlo, monospace;
+  overflow: auto;
+}
+
+/* XTerm.js overrides */
+.xterm {
+  font-family: 'Courier New', Monaco, Menlo, monospace !important;
+  background: transparent !important;
+}
+
+.xterm-viewport {
+  background: transparent !important;
+}
+
+.xterm-screen {
+  background: transparent !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 8px;
+  }
+  
+  .boot-text {
+    font-size: 12px;
+  }
+  
+  .terminal-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ascii-art {
+    font-size: 6px;
+  }
+  
+  .terminal-header {
+    padding: 6px 12px;
+  }
+  
+  .terminal-title {
+    font-size: 10px;
+  }
+}
