@@ -1,150 +1,278 @@
-# Terminal of BONK
+# 🔨 Terminal of BONK
 
-A dynamic and playful web-based terminal for blockchain development, featuring BONK branding with authentic terminal interactions and comprehensive command system.
+<div align="center">
 
-## Features
+[![BONK Terminal](https://img.shields.io/badge/BONK-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
+[![X Follow](https://img.shields.io/badge/Follow-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
+[![Website](https://img.shields.io/badge/Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
 
-- **Interactive Terminal Interface**: Full-featured terminal with 30+ commands
-- **BONK AI Agent**: GPT-4 powered assistant for terminal guidance and support
-- **ASCII Art Collection**: 90+ BONK-themed ASCII memes and art pieces
-- **Solana Wallet Integration**: Create and manage Solana wallets directly in the terminal
-- **Real-time Data**: WebSocket updates for crypto data (placeholder mode)
-- **Mobile Optimized**: Responsive design with mobile-first approach
-- **BONKOS System**: Chaotic meme-generating operating system personality
+*A dynamic and playful web-based terminal for blockchain development, featuring BONK branding with authentic terminal interactions and comprehensive command system.*
 
-## Quick Start
+[🚀 **Try Live Demo**](https://bonkterminal.app/) | [📱 **Follow on X**](https://x.com/BonkTerminalapp) | [📖 **Documentation**](#available-commands)
 
-### Prerequisites
+</div>
 
-- Node.js 18+ 
-- PostgreSQL database (optional, uses in-memory storage by default)
+---
 
-### Environment Variables
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🖥️ **Terminal Experience**
+- 🎯 Interactive terminal with 30+ commands
+- 🎨 90+ BONK-themed ASCII memes and art
+- 📱 Mobile-optimized responsive design
+- ⚡ Real-time WebSocket updates
+
+</td>
+<td width="50%">
+
+### 🤖 **AI & Blockchain**
+- 🧠 GPT-4 powered BONK AI agent
+- 💰 Solana wallet integration
+- 📊 Real-time crypto data feeds
+- 🔨 BONKOS chaotic meme system
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Quick Start
+
+### 📋 Prerequisites
+
+- **Node.js** 18+ 
+- **PostgreSQL** (optional - uses in-memory storage by default)
+
+### 🔧 Installation
+
+```bash
+# 1️⃣ Clone the repository
+git clone <your-repo-url>
+cd terminal-of-bonk
+
+# 2️⃣ Install dependencies
+npm install
+
+# 3️⃣ Set up environment variables (optional)
+cp .env.example .env
+# Edit .env with your API keys
+
+# 4️⃣ Start development server
+npm run dev
+
+# 5️⃣ Open in browser
+# 🌐 http://localhost:5000
+```
+
+### ⚙️ Environment Variables
 
 Create a `.env` file in the root directory:
 
 ```env
-# Optional: OpenAI API key for AI agent and meme generation
+# 🤖 OpenAI API key for AI agent and meme generation
 OPENAI_API_KEY=your_openai_api_key_here
 
-# Optional: Helius API key for enhanced Solana connectivity
+# 🔗 Helius API key for enhanced Solana connectivity
 HELIUS_API_KEY=your_helius_api_key_here
 
-# Optional: Database URL (uses in-memory storage if not provided)
+# 🗄️ Database URL (optional - uses in-memory storage if not provided)
 DATABASE_URL=postgresql://user:password@localhost:5432/bonk_terminal
 ```
 
-### Installation
+---
 
-1. Clone the repository:
-```bash
-git clone <your-repo-url>
-cd terminal-of-bonk
-```
+## 🎮 Available Commands
 
-2. Install dependencies:
-```bash
-npm install
-```
+<details>
+<summary>🔧 <strong>Core Commands</strong></summary>
 
-3. Start the development server:
-```bash
-npm run dev
-```
+| Command | Description |
+|---------|-------------|
+| `help` | 📖 Show all available commands |
+| `clear` | 🧹 Clear the terminal screen |
+| `date` | 📅 Show current date and time |
+| `whoami` | 👤 Display current user information |
 
-4. Open your browser to `http://localhost:5000`
+</details>
 
-## Available Commands
+<details>
+<summary>🔨 <strong>BONK Commands</strong></summary>
 
-### Core Commands
-- `help` - Show all available commands
-- `clear` - Clear the terminal screen
-- `date` - Show current date and time
-- `whoami` - Display current user information
+| Command | Description |
+|---------|-------------|
+| `bonk` | 🎨 Display random BONK ASCII art |
+| `meme` | 😂 Generate AI-powered BONK memes |
+| `hammer` | ⚡ Activate BONK hammer energy |
+| `energy` | 🔋 Check current BONK power levels |
 
-### BONK Commands
-- `bonk` - Display random BONK ASCII art
-- `meme` - Generate AI-powered BONK memes
-- `hammer` - Activate BONK hammer energy
-- `energy` - Check current BONK power levels
+</details>
 
-### AI Assistant
-- `ai <question>` - Ask the BONK AI agent anything
-- `agent <question>` - Alternative AI command
-- `ask <question>` - Get help with terminal features
+<details>
+<summary>🤖 <strong>AI Assistant</strong></summary>
 
-### Wallet Commands
-- `wallet create` - Generate a new Solana wallet
-- `wallet import` - Import existing wallet with seed phrase
-- `wallet balance` - Check wallet balance (coming soon)
-- `wallet address` - Display wallet address (coming soon)
+| Command | Description |
+|---------|-------------|
+| `ai <question>` | 🧠 Ask the BONK AI agent anything |
+| `agent <question>` | 🤖 Alternative AI command |
+| `ask <question>` | ❓ Get help with terminal features |
 
-### Crypto & Market
-- `price` - Show BONK price data (placeholder mode)
-- `chart` - Display price chart (coming soon)
-- `market` - Market analysis (coming soon)
+</details>
 
-### Lore & Fun
-- `bonk-lore` - Read BONK chronicles and legends
-- `awaken` - Awaken the BONK energy
-- `power` - Display BONK power information
-- `rebuild` - BONK reconstruction themes
+<details>
+<summary>💰 <strong>Wallet Commands</strong></summary>
 
-## Architecture
+| Command | Description |
+|---------|-------------|
+| `wallet create` | 🆕 Generate a new Solana wallet |
+| `wallet import` | 📥 Import existing wallet with seed phrase |
+| `wallet balance` | 💳 Check wallet balance *(coming soon)* |
+| `wallet address` | 📍 Display wallet address *(coming soon)* |
 
-- **Frontend**: React with TypeScript, terminal interface
-- **Backend**: Express.js with WebSocket support
-- **Database**: PostgreSQL with Drizzle ORM (optional)
-- **AI Integration**: OpenAI GPT-4 for meme generation and chat
-- **Blockchain**: Solana Web3.js for wallet operations
+</details>
 
-## Development
+<details>
+<summary>📈 <strong>Crypto & Market</strong></summary>
 
-### Project Structure
-```
-├── client/          # React frontend
-├── server/          # Express backend
-├── shared/          # Shared types and schemas
-├── wallets/         # Generated wallet files (git-ignored)
-└── attached_assets/ # Static assets
-```
+| Command | Description |
+|---------|-------------|
+| `price` | 💹 Show BONK price data *(placeholder mode)* |
+| `chart` | 📊 Display price chart *(coming soon)* |
+| `market` | 📈 Market analysis *(coming soon)* |
 
-### Key Files
-- `client/src/components/Terminal.tsx` - Main terminal interface
-- `client/src/lib/terminal-commands.ts` - Command implementations
-- `server/routes.ts` - API endpoints
-- `server/lib/bonk-agent.ts` - AI agent implementation
-- `server/lib/openai-memes.ts` - Meme generation system
+</details>
 
-### Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run db:push` - Push database schema changes (if using PostgreSQL)
+<details>
+<summary>🎭 <strong>Lore & Fun</strong></summary>
 
-## Security Notes
+| Command | Description |
+|---------|-------------|
+| `bonk-lore` | 📚 Read BONK chronicles and legends |
+| `awaken` | 🌟 Awaken the BONK energy |
+| `power` | ⚡ Display BONK power information |
+| `rebuild` | 🔄 BONK reconstruction themes |
 
-- **Private Keys**: Never commit private keys or seed phrases
-- **API Keys**: Use environment variables for all sensitive data
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Support
-
-For questions or support:
-- Open an issue on GitHub
-- Use the `ai` command in the terminal for help
-- Check the `help` command for available features
+</details>
 
 ---
 
-**Built with BONK energy** 🔨
+## 🏗️ Architecture
+
+```mermaid
+graph TB
+    A[🌐 React Frontend] --> B[🚀 Express Backend]
+    B --> C[🗄️ PostgreSQL Database]
+    B --> D[🤖 OpenAI GPT-4]
+    B --> E[⛓️ Solana Web3.js]
+    A --> F[🔌 WebSocket Connection]
+    F --> B
+```
+
+### 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | ⚛️ React + TypeScript |
+| **Backend** | 🚀 Express.js + WebSocket |
+| **Database** | 🐘 PostgreSQL + Drizzle ORM |
+| **AI** | 🧠 OpenAI GPT-4 |
+| **Blockchain** | ⛓️ Solana Web3.js |
+
+---
+
+## 📁 Project Structure
+
+```
+📦 terminal-of-bonk
+├── 📂 client/              # ⚛️ React frontend
+│   ├── 📂 src/
+│   │   ├── 📂 components/
+│   │   └── 📂 lib/
+├── 📂 server/              # 🚀 Express backend
+│   ├── 📂 lib/
+│   └── 📂 routes/
+├── 📂 shared/              # 🔄 Shared types and schemas
+├── 📂 wallets/             # 💰 Generated wallet files (git-ignored)
+└── 📂 attached_assets/     # 🎨 Static assets
+```
+
+### 🔑 Key Files
+
+| File | Purpose |
+|------|---------|
+| `client/src/components/Terminal.tsx` | 🖥️ Main terminal interface |
+| `client/src/lib/terminal-commands.ts` | ⚙️ Command implementations |
+| `server/routes.ts` | 🛣️ API endpoints |
+| `server/lib/bonk-agent.ts` | 🤖 AI agent implementation |
+| `server/lib/openai-memes.ts` | 😂 Meme generation system |
+
+---
+
+## 🔧 Development
+
+### 📜 Available Scripts
+
+```bash
+npm run dev      # 🔥 Start development server
+npm run build    # 📦 Build for production
+npm run db:push  # 🗄️ Push database schema changes
+```
+
+### 🤝 Contributing
+
+1. **🍴 Fork** the repository
+2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **✨ Make** your changes
+4. **🧪 Add** tests if applicable
+5. **📤 Submit** a pull request
+
+---
+
+## 🔒 Security Notes
+
+> ⚠️ **Important Security Reminders**
+> 
+> - 🔐 **Never commit private keys or seed phrases**
+> - 🔑 **Use environment variables for all sensitive data**
+> - 🛡️ **Keep API keys secure and rotate regularly**
+
+---
+
+## 📞 Support & Community
+
+<div align="center">
+
+### 🤝 Get Help
+
+[![X Follow](https://img.shields.io/badge/Follow_Updates-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
+[![Website](https://img.shields.io/badge/Visit_Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
+
+**Need assistance?**
+- 💬 Use the `ai` command in the terminal for instant help
+- 📖 Check the `help` command for available features
+- 🐛 Open an issue on GitHub for bug reports
+- 🚀 Follow us on X for updates and announcements
+
+</div>
+
+---
+
+## 📄 License
+
+**MIT License** - see [LICENSE](LICENSE) file for details
+
+---
+
+<div align="center">
+
+**🔨 Built with BONK energy 🔨**
+
+*Empowering the next generation of blockchain developers with chaotic meme energy*
+
+[![Star this project](https://img.shields.io/github/stars/your-username/terminal-of-bonk?style=social)](https://github.com/your-username/terminal-of-bonk)
+
+</div>
