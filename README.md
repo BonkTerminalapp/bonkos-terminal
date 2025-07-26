@@ -123,10 +123,8 @@ npm run dev
 
 ## Security Notes
 
-- **Wallet Files**: All generated wallets are saved locally and git-ignored
 - **Private Keys**: Never commit private keys or seed phrases
 - **API Keys**: Use environment variables for all sensitive data
-- **Local Storage**: Wallet data is stored securely in the `wallets/` directory
 
 ## Contributing
 
