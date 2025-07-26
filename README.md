@@ -1,14 +1,12 @@
-# 🔨 Terminal of BONK
+# 🔨 Bonk Terminal
 
 <div align="center">
 
-[![BONK Terminal](https://img.shields.io/badge/BONK-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
+[![BONK Terminal](https://img.shields.io/badge/Bonk-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
 [![X Follow](https://img.shields.io/badge/Follow-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
 [![Website](https://img.shields.io/badge/Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
 
 *A dynamic and playful web-based terminal for blockchain development, featuring BONK branding with authentic terminal interactions and comprehensive command system.*
-
-[🚀 **Try Live Demo**](https://bonkterminal.app/) | [📱 **Follow on X**](https://x.com/BonkTerminalapp) | [📖 **Documentation**](#available-commands)
 
 </div>
 
@@ -52,8 +50,8 @@
 
 ```bash
 # 1️⃣ Clone the repository
-git clone <your-repo-url>
-cd terminal-of-bonk
+git clone https://github.com/BonkTerminalapp/bonkos-terminal.git
+cd bonkos-terminal
 
 # 2️⃣ Install dependencies
 npm install
@@ -244,20 +242,12 @@ npm run db:push  # 🗄️ Push database schema changes
 
 ## 📞 Support & Community
 
-<div align="center">
-
-### 🤝 Get Help
-
-[![X Follow](https://img.shields.io/badge/Follow_Updates-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
-[![Website](https://img.shields.io/badge/Visit_Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
-
 **Need assistance?**
 - 💬 Use the `ai` command in the terminal for instant help
 - 📖 Check the `help` command for available features
 - 🐛 Open an issue on GitHub for bug reports
-- 🚀 Follow us on X for updates and announcements
-
-</div>
+- 🚀 Follow us on X for updates: [@BonkTerminalapp](https://x.com/BonkTerminalapp)
+- 🌐 Visit our website: [bonkterminal.app](https://bonkterminal.app/)
 
 ---
 
@@ -273,6 +263,6 @@ npm run db:push  # 🗄️ Push database schema changes
 
 *Empowering the next generation of blockchain developers with chaotic meme energy*
 
-[![Star this project](https://img.shields.io/github/stars/your-username/terminal-of-bonk?style=social)](https://github.com/your-username/terminal-of-bonk)
+[![Star this project](https://img.shields.io/github/stars/BonkTerminalapp/bonkos-terminal?style=social)](https://github.com/BonkTerminalapp/bonkos-terminal)
 
 </div>
