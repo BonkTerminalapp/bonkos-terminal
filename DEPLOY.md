@@ -49,7 +49,6 @@ git push -u origin main
 ## What's Excluded from Git
 
 The following sensitive files are automatically excluded:
-- All files in `wallets/` directory (contains private keys)
 - `.env` files (contains API keys)
 - `boNk*.json` files (wallet keypairs)
 - `node_modules/` and build files
