@@ -6,7 +6,12 @@
 
 [![BONK Terminal](https://img.shields.io/badge/Bonk-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
 [![X Follow](https://img.shields.io/badge/Follow-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
+[![X Community](https://img.shields.io/badge/X-Community-1DA1F2?style=for-the-badge&logo=x)](https://x.com/i/communities/1949345113047486917/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/BonkTerminalapp/bonkos-terminal)
 [![Website](https://img.shields.io/badge/Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
+[![Fair Launch](https://img.shields.io/badge/Fair_Launch-letsbonk.fun-FF6B35?style=for-the-badge&logo=solana)](https://letsbonk.fun)
+[![Contributing](https://img.shields.io/badge/Contributing-Guide-28A745?style=for-the-badge&logo=git)](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/CONTRIBUTING.md)
+[![Deployment](https://img.shields.io/badge/Deployment-Guide-007ACC?style=for-the-badge&logo=docker)](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/DEPLOY.md)
 
 *Advanced React-based terminal emulator with Solana blockchain integration, featuring real-time WebSocket data streams, AI-powered trading algorithms, and comprehensive SPL token management.*
 
@@ -53,13 +58,6 @@
 </td>
 </tr>
 </table>
-
-### 🎯 **Funding Allocation**
-- 🔥 **40%** Core development and optimization
-- 🤖 **25%** AI/ML model training and inference costs
-- 📊 **20%** Real-time data feeds and RPC infrastructure
-- 🎮 **10%** Community development tools and SDKs
-- 🛡️ **5%** Security audits and penetration testing
 
 ---
 
