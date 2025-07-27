@@ -14,6 +14,31 @@
 
 ---
 
+## 🗺️ Roadmap
+
+### 🎯 Q3 2025 (Current)
+- 🔄 Enhanced wallet balance and transaction features
+- 🔄 Real-time BONK price integration (exit placeholder mode)
+- 🔄 Advanced AI trading strategies and market analysis
+- 🔄 Mobile-optimized terminal interface improvements
+- 📅 Community-driven feature voting system
+
+### 🎯 Q4 2025
+- 📊 Interactive price charts and technical analysis
+- 🚀 Advanced portfolio management and P&L tracking
+- 🎮 BONK gaming integrations and mini-games
+- 🏆 Community leaderboards and achievement system
+- 🔗 Cross-platform mobile app development
+
+### 🎯 Q1 2026
+- 📱 Native mobile app release (iOS/Android)
+- ⚡ Lightning-fast trading execution with Jupiter integration
+- 🤖 Advanced AI assistant with voice commands
+- 🌉 Multi-chain support expansion
+- 🏛️ Community DAO governance implementation
+
+---
+
 ## 💎 Support the Project
 
 <div align="center">
