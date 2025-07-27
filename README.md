@@ -3,9 +3,9 @@
 <div align="center">
 
 [![BONK Terminal](https://img.shields.io/badge/BonkOS-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
-[![Blockchain](https://img.shields.io/badge/BonkOS-Blockchain-purple?style=for-the-badge&logo=solana)](https://github.com/BonkTerminalapp/bonkos-blockchain)
 [![X Follow](https://img.shields.io/badge/Follow-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
-[![Discord](https://img.shields.io/badge/Discord-BonkOS-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/bonkos)
+[![X Community](https://img.shields.io/badge/X-Community-1DA1F2?style=for-the-badge&logo=x)](https://x.com/i/communities/1949345113047486917/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/BonkTerminalapp/bonkos-terminal)
 [![Website](https://img.shields.io/badge/Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
 
 *The ultimate BONK-optimized terminal interface for blockchain development. Command the future of crypto with AI-powered tools, custom blockchain integration, and blazing-fast trading capabilities.*
@@ -361,7 +361,11 @@ npm run dev
 
 ### 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
+We welcome contributions! Please read our detailed contributing guide for complete instructions:
+
+📚 **[Contributing to Terminal of BONK](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/CONTRIBUTING.md)**
+
+Quick start for contributors:
 
 1. **🍴 Fork** the repository
 2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
@@ -383,6 +387,12 @@ We welcome contributions! Here's how to get started:
 ## 🚀 Deployment
 
 ### 🌐 Production Deployment
+
+For complete deployment instructions, see our detailed guide:
+
+📚 **[Deployment Guide](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/DEPLOY.md)**
+
+Quick deployment:
 
 ```bash
 # Build for production
@@ -465,11 +475,10 @@ bonkos validator status
 
 ### 🤝 Join Our Community
 
-- **💬 Discord**: [BonkOS Community](https://discord.gg/bonkos) - 24/7 support and discussions
 - **🐦 Twitter/X**: [@BonkTerminalapp](https://x.com/BonkTerminalapp) - Latest updates and announcements
-- **📖 GitHub**: Issues, discussions, and contributions
-- **🌐 Website**: [bonkterminal.app](https://bonkterminal.app) - Official documentation and guides
-- **📺 YouTube**: Tutorials and development updates
+- **👥 X Community**: [BonkOS Community](https://x.com/i/communities/1949345113047486917/) - Build, test, and meme with BonkOS — the terminal-native meme OS. Contribute code, submit ASCII, or vibe in the Solana trenches.
+- **📖 GitHub**: [BonkTerminalapp/bonkos-terminal](https://github.com/BonkTerminalapp/bonkos-terminal) - Issues, discussions, and contributions
+- **🌐 Website**: [bonkterminal.app](https://bonkterminal.app/) - Official documentation and guides
 
 ### 🏆 Community Programs
 
@@ -488,17 +497,18 @@ bonkos validator status
 **Need assistance?**
 - 💬 Use the `ai help` command in the terminal for instant AI assistance
 - 📖 Check the `help` command for available features and syntax
-- 🔍 Search our documentation at [docs.bonkterminal.app](https://docs.bonkterminal.app)
+- 🔍 Browse our [GitHub repository](https://github.com/BonkTerminalapp/bonkos-terminal) for documentation
 - 🐛 Report bugs on [GitHub Issues](https://github.com/BonkTerminalapp/bonkos-terminal/issues)
-- 💬 Join our [Discord community](https://discord.gg/bonkos) for real-time help
+- 💬 Join our [X Community](https://x.com/i/communities/1949345113047486917/) for real-time help
+- 🌐 Visit [bonkterminal.app](https://bonkterminal.app/) for official guides
 
 ### 📚 Documentation & Resources
 
-- **📖 Official Docs**: [docs.bonkterminal.app](https://docs.bonkterminal.app)
-- **🎓 Tutorial Series**: Step-by-step guides for beginners
-- **📊 API Reference**: Complete API documentation
-- **🔧 Developer Guide**: Building on BonkOS blockchain
-- **💡 Best Practices**: Security and optimization tips
+- **📖 GitHub Repository**: [github.com/BonkTerminalapp/bonkos-terminal](https://github.com/BonkTerminalapp/bonkos-terminal)
+- **🚀 Deployment Guide**: [DEPLOY.md](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/DEPLOY.md)
+- **🤝 Contributing Guide**: [CONTRIBUTING.md](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/CONTRIBUTING.md)
+- **🌐 Official Website**: [bonkterminal.app](https://bonkterminal.app/)
+- **💡 Best Practices**: Security and optimization tips in our docs
 
 ---
 
