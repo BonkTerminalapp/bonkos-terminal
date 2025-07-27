@@ -12,6 +12,54 @@
 
 ---
 
+## 💎 Support the Project
+
+<div align="center">
+
+**Help us build the ultimate BONK terminal experience!**
+
+🚀 **Coming Soon**: Native BONK Terminal Token  
+💰 **Contract Address**: *Coming Soon*
+
+</div>
+
+### 🤝 Ways to Support
+
+<table>
+<tr>
+<td width="50%">
+
+### 🌟 **Community Support**
+- ⭐ **Star** this repository
+- 🔄 **Share** on social media
+- 💬 **Join** our [X Community](https://x.com/i/communities/1949345113047486917/)
+- 🐛 **Report bugs** and suggest features
+- 📖 **Contribute** code and documentation
+
+</td>
+<td width="50%">
+
+### 💰 **Financial Support**
+- 🪙 **BONK donations** (wallet integration coming soon)
+- 🎯 **Sponsor** new features
+- 🏆 **Fund** community competitions
+- 🚀 **Support** development costs
+- 💎 **Early access** to premium features
+
+</td>
+</tr>
+</table>
+
+### 🎯 **What Your Support Enables**
+- 🔥 Faster feature development and releases
+- 🤖 Enhanced AI capabilities and models
+- 📊 Real-time data feeds and integrations
+- 🎮 Community events and competitions
+- 🛡️ Better security and infrastructure
+- 📱 Mobile app development
+
+---
+
 ## ✨ Features
 
 <table>
