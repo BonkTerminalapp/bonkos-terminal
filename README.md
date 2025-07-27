@@ -1,36 +1,14 @@
-# 🔨 BonkOS Terminal
+# 🔨 Bonk Terminal
 
 <div align="center">
 
-[![BONK Terminal](https://img.shields.io/badge/BonkOS-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
+[![BONK Terminal](https://img.shields.io/badge/Bonk-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
 [![X Follow](https://img.shields.io/badge/Follow-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
-[![X Community](https://img.shields.io/badge/X-Community-1DA1F2?style=for-the-badge&logo=x)](https://x.com/i/communities/1949345113047486917/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/BonkTerminalapp/bonkos-terminal)
 [![Website](https://img.shields.io/badge/Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
 
-*The ultimate BONK-optimized terminal interface for blockchain development. Command the future of crypto with AI-powered tools, custom blockchain integration, and blazing-fast trading capabilities.*
-
-**🚀 NOW FEATURING: Custom Solana Fork with BONK-Native Features**
+*A dynamic and playful web-based terminal for blockchain development, featuring BONK branding with authentic terminal interactions and comprehensive command system.*
 
 </div>
-
----
-
-## 🌟 What's New in BonkOS v2.0
-
-### 🔥 **BonkOS Blockchain** - Our Custom Solana Fork
-- ⚡ **50,000+ TPS** optimized for meme coin trading
-- 💎 **Native BONK integration** with fee discounts
-- 🤖 **AI-powered validation** and spam protection
-- 🖥️ **Terminal-first blockchain operations**
-- 🔗 **Full Solana compatibility** with enhanced features
-
-### 🎯 **Enhanced Terminal Experience**
-- 🧠 **Advanced AI Agent** with market analysis
-- 📊 **Real-time blockchain monitoring** and validator management
-- 🚀 **One-command blockchain deployment**
-- 💰 **Professional trading tools** with Jupiter integration
-- 🎨 **Custom themes** and terminal customization
 
 ---
 
@@ -41,35 +19,19 @@
 <td width="50%">
 
 ### 🖥️ **Terminal Experience**
-- 🎯 Interactive terminal with 50+ commands
-- 🎨 100+ BONK-themed ASCII memes and art
+- 🎯 Interactive terminal with 30+ commands
+- 🎨 90+ BONK-themed ASCII memes and art
 - 📱 Mobile-optimized responsive design
 - ⚡ Real-time WebSocket updates
-- 🎭 Custom terminal themes and layouts
-
-### 🤖 **AI & Intelligence**
-- 🧠 GPT-4 powered BONK AI agent
-- 📈 Market sentiment analysis
-- 🔍 Technical pattern recognition
-- 💡 Educational trading insights
-- 🎯 Natural language command processing
 
 </td>
 <td width="50%">
 
-### ⛓️ **Blockchain & Trading**
-- 🔨 Custom BonkOS blockchain integration
-- 💰 Solana wallet management
+### 🤖 **AI & Blockchain**
+- 🧠 GPT-4 powered BONK AI agent
+- 💰 Solana wallet integration
 - 📊 Real-time crypto data feeds
-- ⚡ Jupiter DEX aggregation
-- 🚀 MEV protection and advanced routing
-
-### 🛠️ **Developer Tools**
-- 🏗️ One-click smart contract deployment
-- 🔧 Blockchain validator management
-- 📁 Program cloning from mainnet
-- 🧪 Local testnet simulation
-- 📖 Comprehensive SDK and API
+- 🔨 BONKOS chaotic meme system
 
 </td>
 </tr>
@@ -82,9 +44,7 @@
 ### 📋 Prerequisites
 
 - **Node.js** 18+ 
-- **Rust** 1.75+ (for blockchain development)
 - **PostgreSQL** (optional - uses in-memory storage by default)
-- **Solana CLI** (for blockchain features)
 
 ### 🔧 Installation
 
@@ -96,18 +56,14 @@ cd bonkos-terminal
 # 2️⃣ Install dependencies
 npm install
 
-# 3️⃣ Install Rust and Solana CLI (for blockchain features)
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-sh -c "$(curl -sSfL https://release.solana.com/v1.17.0/install)"
-
-# 4️⃣ Set up environment variables
+# 3️⃣ Set up environment variables (optional)
 cp .env.example .env
 # Edit .env with your API keys
 
-# 5️⃣ Start development server
+# 4️⃣ Start development server
 npm run dev
 
-# 6️⃣ Open in browser
+# 5️⃣ Open in browser
 # 🌐 http://localhost:5000
 ```
 
@@ -116,7 +72,7 @@ npm run dev
 Create a `.env` file in the root directory:
 
 ```env
-# 🤖 OpenAI API key for AI agent and advanced features
+# 🤖 OpenAI API key for AI agent and meme generation
 OPENAI_API_KEY=your_openai_api_key_here
 
 # 🔗 Helius API key for enhanced Solana connectivity
@@ -124,13 +80,6 @@ HELIUS_API_KEY=your_helius_api_key_here
 
 # 🗄️ Database URL (optional - uses in-memory storage if not provided)
 DATABASE_URL=postgresql://user:password@localhost:5432/bonk_terminal
-
-# ⛓️ Blockchain RPC endpoints
-BONKOS_RPC_URL=https://rpc.bonkos.network
-SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
-
-# 🔐 Optional: Custom validator keys
-VALIDATOR_KEYPAIR_PATH=./keys/validator-keypair.json
 ```
 
 ---
@@ -243,56 +192,37 @@ graph TB
     A[🌐 React Frontend] --> B[🚀 Express Backend]
     B --> C[🗄️ PostgreSQL Database]
     B --> D[🤖 OpenAI GPT-4]
-    B --> E[⛓️ BonkOS Blockchain]
-    B --> F[🔗 Solana Mainnet]
-    B --> G[📊 Jupiter API]
-    A --> H[🔌 WebSocket Connection]
-    H --> B
-    E --> I[🏛️ Validator Network]
-    E --> J[🔥 BONK Programs]
+    B --> E[⛓️ Solana Web3.js]
+    A --> F[🔌 WebSocket Connection]
+    F --> B
 ```
 
 ### 🛠️ Tech Stack
 
 | Layer | Technology |
 |-------|------------|
-| **Frontend** | ⚛️ React + TypeScript + Tailwind CSS |
-| **Backend** | 🚀 Express.js + WebSocket + Node.js |
+| **Frontend** | ⚛️ React + TypeScript |
+| **Backend** | 🚀 Express.js + WebSocket |
 | **Database** | 🐘 PostgreSQL + Drizzle ORM |
-| **AI** | 🧠 OpenAI GPT-4 + Custom ML Models |
-| **Blockchain** | ⛓️ Custom Solana Fork + Agave Validator |
-| **Trading** | 📊 Jupiter Aggregator + Custom DEX |
+| **AI** | 🧠 OpenAI GPT-4 |
+| **Blockchain** | ⛓️ Solana Web3.js |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-📦 bonkos-terminal
-├── 📂 client/                    # ⚛️ React frontend
+📦 terminal-of-bonk
+├── 📂 client/              # ⚛️ React frontend
 │   ├── 📂 src/
-│   │   ├── 📂 components/        # UI components
-│   │   ├── 📂 lib/              # Client libraries
-│   │   ├── 📂 hooks/            # React hooks
-│   │   └── 📂 types/            # TypeScript definitions
-├── 📂 server/                    # 🚀 Express backend
-│   ├── 📂 lib/                  # Core libraries
-│   │   ├── 📄 bonk-agent.ts     # AI agent implementation
-│   │   ├── 📄 blockchain.ts     # Blockchain integration
-│   │   └── 📄 trading.ts        # Trading engine
-│   ├── 📂 routes/               # API endpoints
-│   └── 📂 validators/           # Input validation
-├── 📂 blockchain/                # 🔨 BonkOS blockchain
-│   ├── 📂 validator/            # Validator implementation
-│   ├── 📂 programs/             # Native programs
-│   ├── 📂 cli/                  # Blockchain CLI tools
-│   └── 📂 sdk/                  # Development SDK
-├── 📂 shared/                    # 🔄 Shared types and schemas
-├── 📂 scripts/                   # 🛠️ Build and deployment scripts
-├── 📂 docs/                     # 📚 Documentation
-├── 📂 tests/                    # 🧪 Test suites
-├── 📂 wallets/                  # 💰 Generated wallet files (git-ignored)
-└── 📂 assets/                   # 🎨 Static assets and media
+│   │   ├── 📂 components/
+│   │   └── 📂 lib/
+├── 📂 server/              # 🚀 Express backend
+│   ├── 📂 lib/
+│   └── 📂 routes/
+├── 📂 shared/              # 🔄 Shared types and schemas
+├── 📂 wallets/             # 💰 Generated wallet files (git-ignored)
+└── 📂 attached_assets/     # 🎨 Static assets
 ```
 
 ### 🔑 Key Files
@@ -301,10 +231,9 @@ graph TB
 |------|---------|
 | `client/src/components/Terminal.tsx` | 🖥️ Main terminal interface |
 | `client/src/lib/terminal-commands.ts` | ⚙️ Command implementations |
-| `server/routes/api.ts` | 🛣️ Main API endpoints |
+| `server/routes.ts` | 🛣️ API endpoints |
 | `server/lib/bonk-agent.ts` | 🤖 AI agent implementation |
-| `blockchain/validator/src/main.rs` | ⛓️ Custom blockchain validator |
-| `blockchain/programs/bonk-dex/` | 💱 Native BONK DEX program |
+| `server/lib/openai-memes.ts` | 😂 Meme generation system |
 
 ---
 
@@ -313,198 +242,39 @@ graph TB
 ### 📜 Available Scripts
 
 ```bash
-# 🔥 Development
-npm run dev                    # Start development server
-npm run dev:blockchain         # Start local blockchain
-npm run dev:full              # Start everything (terminal + blockchain)
-
-# 📦 Building
-npm run build                 # Build for production
-npm run build:blockchain      # Build blockchain components
-npm run build:docker         # Build Docker containers
-
-# 🗄️ Database
-npm run db:push              # Push database schema changes
-npm run db:migrate           # Run database migrations
-npm run db:seed              # Seed database with test data
-
-# 🧪 Testing
-npm run test                 # Run all tests
-npm run test:unit            # Run unit tests
-npm run test:integration     # Run integration tests
-npm run test:blockchain      # Test blockchain functionality
-
-# 🚀 Deployment
-npm run deploy:testnet       # Deploy to testnet
-npm run deploy:mainnet       # Deploy to mainnet
-npm run deploy:validator     # Deploy validator node
-```
-
-### 🛠️ Development Setup
-
-```bash
-# Install additional development tools
-npm install -g @solana/cli
-cargo install --git https://github.com/anza-xyz/agave agave-validator
-
-# Set up local blockchain development
-cd blockchain
-cargo build --release
-
-# Start local validator
-./target/release/bonk-validator --ledger ./test-ledger --rpc-port 8899
-
-# In another terminal, run the web interface
-cd ..
-npm run dev
+npm run dev      # 🔥 Start development server
+npm run build    # 📦 Build for production
+npm run db:push  # 🗄️ Push database schema changes
 ```
 
 ### 🤝 Contributing
 
-We welcome contributions! Please read our detailed contributing guide for complete instructions:
-
-📚 **[Contributing to Terminal of BONK](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/CONTRIBUTING.md)**
-
-Quick start for contributors:
-
 1. **🍴 Fork** the repository
 2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **✨ Make** your changes and add tests
-4. **🧪 Run** the test suite (`npm run test`)
-5. **📝 Update** documentation if needed
-6. **📤 Submit** a pull request
-
-### 📋 Contribution Guidelines
-
-- **Code Style**: Follow ESLint and Prettier configurations
-- **Testing**: Add tests for new features
-- **Documentation**: Update README and docs for new commands
-- **Security**: Never commit private keys or sensitive data
-- **Commits**: Use conventional commit messages
+3. **✨ Make** your changes
+4. **🧪 Add** tests if applicable
+5. **📤 Submit** a pull request
 
 ---
 
-## 🚀 Deployment
+## 🔒 Security Notes
 
-### 🌐 Production Deployment
-
-For complete deployment instructions, see our detailed guide:
-
-📚 **[Deployment Guide](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/DEPLOY.md)**
-
-Quick deployment:
-
-```bash
-# Build for production
-npm run build
-
-# Deploy to your preferred platform
-npm run deploy:production
-
-# Or use Docker
-docker build -t bonkos-terminal .
-docker run -p 5000:5000 bonkos-terminal
-```
-
-### ⛓️ Blockchain Deployment
-
-```bash
-# Deploy to testnet
-npm run deploy:testnet
-
-# Deploy validator
-npm run deploy:validator --stake 1000000
-
-# Deploy to mainnet (requires additional setup)
-npm run deploy:mainnet
-```
-
----
-
-## 🔒 Security & Best Practices
-
-### 🛡️ Security Measures
-
-- **🔐 Non-custodial design**: Private keys never leave your device
-- **🔑 Environment variables**: All sensitive data properly isolated
-- **🛡️ Input validation**: Comprehensive input sanitization
-- **🔒 HTTPS enforcement**: All connections encrypted
-- **🚫 Rate limiting**: API abuse prevention
-
-### ⚠️ Important Security Reminders
-
-> **🚨 CRITICAL SECURITY NOTES**
+> ⚠️ **Important Security Reminders**
 > 
-> - **🔐 Never commit private keys, seed phrases, or API keys**
-> - **🔑 Use environment variables for all sensitive configuration**
-> - **🛡️ Keep API keys secure and rotate them regularly**
-> - **💰 Start with small amounts when testing trading features**
-> - **🧪 Use testnet for development and testing**
+> - 🔐 **Never commit private keys or seed phrases**
+> - 🔑 **Use environment variables for all sensitive data**
+> - 🛡️ **Keep API keys secure and rotate regularly**
 
 ---
 
-## 📊 Performance & Monitoring
-
-### 📈 Performance Metrics
-
-- **⚡ Terminal Response Time**: <100ms average
-- **🚀 Trading Execution**: <500ms via Jupiter
-- **⛓️ Blockchain TPS**: 50,000+ transactions per second
-- **🔄 WebSocket Latency**: <50ms for real-time updates
-- **📊 Uptime Target**: 99.9% availability
-
-### 🔍 Monitoring & Analytics
-
-```bash
-# Check system health
-bonkos status
-
-# Monitor network performance
-bonkos monitor network
-
-# View trading analytics
-bonkos analytics trading
-
-# Check validator health
-bonkos validator status
-```
-
----
-
-## 🌍 Community & Ecosystem
-
-### 🤝 Join Our Community
-
-- **🐦 Twitter/X**: [@BonkTerminalapp](https://x.com/BonkTerminalapp) - Latest updates and announcements
-- **👥 X Community**: [BonkOS Community](https://x.com/i/communities/1949345113047486917/) - Build, test, and meme with BonkOS — the terminal-native meme OS. Contribute code, submit ASCII, or vibe in the Solana trenches.
-- **📖 GitHub**: [BonkTerminalapp/bonkos-terminal](https://github.com/BonkTerminalapp/bonkos-terminal) - Issues, discussions, and contributions
-- **🌐 Website**: [bonkterminal.app](https://bonkterminal.app/) - Official documentation and guides
-
-### 🏆 Community Programs
-
-- **🎓 Educational Content**: Learn blockchain development
-- **💰 Bug Bounty Program**: Earn rewards for finding issues
-- **🏗️ Developer Grants**: Funding for ecosystem projects
-- **🎪 Community Events**: Regular AMAs and hackathons
-- **🥇 Trading Competitions**: Compete for BONK prizes
-
----
-
-## 📞 Support & Help
-
-### 🆘 Getting Help
+## 📞 Support & Community
 
 **Need assistance?**
-- 💬 Use the `ai help` command in the terminal for instant AI assistance
-- 📖 Check the `help` command for available features and syntax
-- 🔍 Browse our [GitHub repository](https://github.com/BonkTerminalapp/bonkos-terminal) for documentation
-- 🐛 Report bugs on [GitHub Issues](https://github.com/BonkTerminalapp/bonkos-terminal/issues)
-- 💬 Join our [X Community](https://x.com/i/communities/1949345113047486917/) for real-time help
-- 🌐 Visit [bonkterminal.app](https://bonkterminal.app/) for official guides
-
-### 📚 Documentation & Resources
-
-- **📖 GitHub Repository**: [github.com/BonkTerminalapp/bonkos-terminal](https://github.com/BonkTerminalapp/bonkos-terminal)
+- 💬 Use the `ai` command in the terminal for instant help
+- 📖 Check the `help` command for available features
+- 🐛 Open an issue on GitHub for bug reports
+- 🚀 Follow us on X for updates: [@BonkTerminalapp](https://x.com/BonkTerminalapp)
+- 🌐 Visit our website: [bonkterminal.app](https://bonkterminal.app/) [github.com/BonkTerminalapp/bonkos-terminal](https://github.com/BonkTerminalapp/bonkos-terminal)
 - **🚀 Deployment Guide**: [DEPLOY.md](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/DEPLOY.md)
 - **🤝 Contributing Guide**: [CONTRIBUTING.md](https://github.com/BonkTerminalapp/bonkos-terminal/blob/main/CONTRIBUTING.md)
 - **🌐 Official Website**: [bonkterminal.app](https://bonkterminal.app/)
