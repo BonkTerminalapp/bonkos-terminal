@@ -240,71 +240,244 @@ LOG_LEVEL=info                                 # debug|info|warn|error
 
 ## 🏗️ System Architecture
 
+### 🔗 High-Level Architecture Flow
+
 ```mermaid
 graph TB
-    subgraph "Frontend Layer"
+    subgraph "🌐 Frontend Layer"
         A[React 18 App] --> B[xterm.js Terminal]
         A --> C[WebSocket Client]
-        A --> D[State Management]
-        D --> E[Redux Toolkit]
-        D --> F[React Query]
+        A --> D[Redux Store]
+        D --> E[RTK Query]
+        D --> F[Terminal State]
     end
     
-    subgraph "Backend Services"
+    subgraph "🚀 Backend Services"
         G[Express.js API] --> H[WebSocket Server]
-        G --> I[Authentication]
+        G --> I[JWT Authentication]
         G --> J[Rate Limiting]
-        H --> K[Socket.io Clustering]
+        H --> K[Socket.io Events]
     end
     
-    subgraph "External APIs"
-        L[OpenAI GPT-4]
-        M[Solana RPC]
-        N[Jupiter API]
-        O[Helius API]
+    subgraph "🤖 AI & External APIs"
+        L[OpenAI GPT-4 API]
+        M[Solana RPC Nodes]
+        N[Jupiter DEX API]
+        O[Helius Enhanced RPC]
     end
     
-    subgraph "Data Layer"
-        P[PostgreSQL]
-        Q[Redis Cache]
+    subgraph "💾 Data Storage"
+        P[(PostgreSQL)]
+        Q[(Redis Cache)]
         R[IPFS Storage]
     end
     
-    subgraph "Monitoring"
-        S[Sentry]
-        T[Analytics]
-        U[Performance]
+    subgraph "📊 Monitoring Stack"
+        S[Sentry Error Tracking]
+        T[Analytics Pipeline]
+        U[Performance Metrics]
     end
     
-    C --> H
-    G --> L
-    G --> M
-    G --> N
-    G --> O
-    G --> P
-    G --> Q
-    I --> R
-    A --> S
-    G --> T
-    B --> U
+    %% Connections
+    C -.->|Real-time| H
+    G -->|API Calls| L
+    G -->|Blockchain| M
+    G -->|Trading| N
+    G -->|Enhanced RPC| O
+    G -->|Persistence| P
+    G -->|Caching| Q
+    I -->|Storage| R
+    A -->|Errors| S
+    G -->|Metrics| T
+    B -->|Performance| U
 ```
 
-### 🛠️ Technology Stack
+### 🛠️ Detailed Technology Stack
 
-| Layer | Technology | Version | Purpose |
-|-------|------------|---------|---------|
-| **Frontend** | React | 18.2+ | Component architecture with concurrent features |
-| **Terminal** | xterm.js | 5.3+ | WebGL-accelerated terminal emulation |
-| **Styling** | Tailwind CSS | 3.4+ | Utility-first CSS with JIT compilation |
-| **State** | Redux Toolkit | 2.0+ | Predictable state management with RTK Query |
-| **Backend** | Express.js | 4.18+ | RESTful API with middleware architecture |
-| **WebSocket** | Socket.io | 4.7+ | Real-time bidirectional communication |
-| **Database** | PostgreSQL | 14+ | ACID-compliant relational database |
-| **Cache** | Redis | 7.0+ | In-memory data structure store |
-| **Blockchain** | Solana Web3.js | 1.87+ | Solana blockchain interaction library |
-| **AI** | OpenAI API | v1 | Large language model integration |
-| **Trading** | Jupiter API | v6 | DEX aggregation and swap routing |
-| **TypeScript** | TypeScript | 5.3+ | Type-safe JavaScript development |
+<table>
+<tr>
+<th width="15%">Layer</th>
+<th width="20%">Technology</th>
+<th width="12%">Version</th>
+<th width="53%">Purpose & Implementation</th>
+</tr>
+
+<!-- Frontend Technologies -->
+<tr>
+<td rowspan="5"><strong>🌐 Frontend</strong></td>
+<td><strong>React</strong></td>
+<td>18.2+</td>
+<td>Component architecture with concurrent features, Suspense, and automatic batching</td>
+</tr>
+<tr>
+<td><strong>xterm.js</strong></td>
+<td>5.3+</td>
+<td>WebGL-accelerated terminal emulation with 256-color support and Unicode handling</td>
+</tr>
+<tr>
+<td><strong>TypeScript</strong></td>
+<td>5.3+</td>
+<td>Type-safe development with strict mode and advanced type inference</td>
+</tr>
+<tr>
+<td><strong>Tailwind CSS</strong></td>
+<td>3.4+</td>
+<td>Utility-first CSS framework with JIT compilation and custom design tokens</td>
+</tr>
+<tr>
+<td><strong>Redux Toolkit</strong></td>
+<td>2.0+</td>
+<td>Predictable state management with RTK Query for data fetching and caching</td>
+</tr>
+
+<!-- Backend Technologies -->
+<tr>
+<td rowspan="5"><strong>🚀 Backend</strong></td>
+<td><strong>Express.js</strong></td>
+<td>4.18+</td>
+<td>RESTful API server with middleware architecture and async error handling</td>
+</tr>
+<tr>
+<td><strong>Socket.io</strong></td>
+<td>4.7+</td>
+<td>Real-time bidirectional communication with Redis adapter for scaling</td>
+</tr>
+<tr>
+<td><strong>Node.js</strong></td>
+<td>20 LTS</td>
+<td>JavaScript runtime with native ES modules and enhanced performance</td>
+</tr>
+<tr>
+<td><strong>JWT</strong></td>
+<td>9.0+</td>
+<td>Stateless authentication with RS256 signing and refresh token rotation</td>
+</tr>
+<tr>
+<td><strong>Helmet</strong></td>
+<td>7.1+</td>
+<td>Security middleware for HTTP headers, CSP, and XSS protection</td>
+</tr>
+
+<!-- Database Technologies -->
+<tr>
+<td rowspan="3"><strong>💾 Database</strong></td>
+<td><strong>PostgreSQL</strong></td>
+<td>15+</td>
+<td>ACID-compliant relational database with JSON support and connection pooling</td>
+</tr>
+<tr>
+<td><strong>Redis</strong></td>
+<td>7.2+</td>
+<td>In-memory data store for caching, session management, and rate limiting</td>
+</tr>
+<tr>
+<td><strong>Drizzle ORM</strong></td>
+<td>0.29+</td>
+<td>Type-safe SQL query builder with migration support and schema validation</td>
+</tr>
+
+<!-- Blockchain Technologies -->
+<tr>
+<td rowspan="4"><strong>⛓️ Blockchain</strong></td>
+<td><strong>Solana Web3.js</strong></td>
+<td>1.87+</td>
+<td>Solana blockchain interaction library with transaction building and RPC calls</td>
+</tr>
+<tr>
+<td><strong>Jupiter API</strong></td>
+<td>v6</td>
+<td>DEX aggregation for optimal swap routing and price discovery</td>
+</tr>
+<tr>
+<td><strong>Helius RPC</strong></td>
+<td>Enhanced</td>
+<td>High-performance Solana RPC with WebSocket subscriptions and historical data</td>
+</tr>
+<tr>
+<td><strong>Anchor</strong></td>
+<td>0.29+</td>
+<td>Solana smart contract framework for custom program development</td>
+</tr>
+
+<!-- AI Technologies -->
+<tr>
+<td rowspan="3"><strong>🤖 AI/ML</strong></td>
+<td><strong>OpenAI API</strong></td>
+<td>v1</td>
+<td>GPT-4 Turbo integration for natural language processing and code generation</td>
+</tr>
+<tr>
+<td><strong>TensorFlow.js</strong></td>
+<td>4.15+</td>
+<td>Client-side machine learning for pattern recognition and predictive analytics</td>
+</tr>
+<tr>
+<td><strong>LangChain.js</strong></td>
+<td>0.1+</td>
+<td>AI agent framework for context management and tool integration</td>
+</tr>
+
+<!-- DevOps Technologies -->
+<tr>
+<td rowspan="4"><strong>🛠️ DevOps</strong></td>
+<td><strong>Docker</strong></td>
+<td>24+</td>
+<td>Containerization with multi-stage builds and optimized layer caching</td>
+</tr>
+<tr>
+<td><strong>GitHub Actions</strong></td>
+<td>Latest</td>
+<td>CI/CD pipeline with automated testing, building, and deployment</td>
+</tr>
+<tr>
+<td><strong>Sentry</strong></td>
+<td>v7</td>
+<td>Real-time error tracking and performance monitoring with source maps</td>
+</tr>
+<tr>
+<td><strong>Prometheus</strong></td>
+<td>2.48+</td>
+<td>Metrics collection and monitoring with custom dashboards</td>
+</tr>
+</table>
+
+### 🔄 Data Flow Architecture
+
+```typescript
+// Example: Real-time price update flow
+interface PriceUpdateFlow {
+  // 1. WebSocket subscription to price feeds
+  priceSubscription: WebSocket;
+  
+  // 2. Redux state management
+  dispatch: (action: PriceAction) => void;
+  
+  // 3. Component re-rendering
+  useSelector: (state: RootState) => PriceState;
+  
+  // 4. Terminal display update
+  terminal: Terminal;
+}
+
+// Architecture pattern implementation
+const dataFlow = {
+  input: 'User Command',
+  processing: 'Command Parser → Business Logic → External APIs',
+  storage: 'Redis Cache → PostgreSQL Persistence',
+  output: 'WebSocket Response → Terminal Display'
+};
+```
+
+### 🎯 Performance Characteristics
+
+| Component | Metric | Target | Implementation |
+|-----------|--------|--------|----------------|
+| **Frontend** | First Contentful Paint | <1.2s | Code splitting, lazy loading, CDN |
+| **Terminal** | Command Response | <50ms | Web Workers, optimized rendering |
+| **WebSocket** | Message Latency | <25ms | Redis pub/sub, connection pooling |
+| **API** | Response Time | <200ms | Caching, database indexing |
+| **Blockchain** | Transaction Speed | <2s | Priority fees, optimal RPC routing |
+| **Memory** | Heap Usage | <512MB | Garbage collection tuning, memory pools |
 
 ---
 
