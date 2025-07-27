@@ -2,6 +2,8 @@
 
 <div align="center">
 
+![Bonk Terminal Banner](images/Untitled-1.png)
+
 [![BONK Terminal](https://img.shields.io/badge/Bonk-Terminal-orange?style=for-the-badge&logo=terminal)](https://bonkterminal.app/)
 [![X Follow](https://img.shields.io/badge/Follow-@BonkTerminalapp-1DA1F2?style=for-the-badge&logo=x)](https://x.com/BonkTerminalapp)
 [![Website](https://img.shields.io/badge/Website-bonkterminal.app-4285f4?style=for-the-badge&logo=google-chrome)](https://bonkterminal.app/)
@@ -349,31 +351,6 @@ npm run db:push  # 🗄️ Push database schema changes
 - 📊 Advanced analytics dashboard
 - 🔗 Enterprise API offerings
 - 🌍 Global expansion
-
----
-
-## 🗺️ Roadmap
-
-### 🎯 Q3 2025 (Current)
-- 🔄 Enhanced wallet balance and transaction features
-- 🔄 Real-time BONK price integration (exit placeholder mode)
-- 🔄 Advanced AI trading strategies and market analysis
-- 🔄 Mobile-optimized terminal interface improvements
-- 📅 Community-driven feature voting system
-
-### 🎯 Q4 2025
-- 📊 Interactive price charts and technical analysis
-- 🚀 Advanced portfolio management and P&L tracking
-- 🎮 BONK gaming integrations and mini-games
-- 🏆 Community leaderboards and achievement system
-- 🔗 Cross-platform mobile app development
-
-### 🎯 Q1 2026
-- 📱 Native mobile app release (iOS/Android)
-- ⚡ Lightning-fast trading execution with Jupiter integration
-- 🤖 Advanced AI assistant with voice commands
-- 🌉 Multi-chain support expansion
-- 🏛️ Community DAO governance implementation
 
 ---
 
