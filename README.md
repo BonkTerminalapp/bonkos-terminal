@@ -29,7 +29,7 @@
 **Contribute to next-generation blockchain development tooling**
 
 🚀 **Fair Launch**: Native SPL Token on [letsbonk.fun](https://letsbonk.fun)  
-💰 **Contract Address**: *Deployment pending - Fair Launch Platform*
+💰 **Contract Address**: 8rXhMRepuCJ4FVm3gxQiqYbqqSxb6aa2bR3wZDzybonk
 
 *Special thanks to the [letsbonk.fun](https://letsbonk.fun) team for providing a platform and supporting the development* 🙏
 
